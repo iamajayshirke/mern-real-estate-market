@@ -6,7 +6,7 @@ function Header() {
     <header className="bg-slate-200 shadow-md">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3">
         <Link to="/">
-          <h1 className="font-bold text-sm sm:text-xl flex flex-wrap">
+          <h1 className="font-bold text-md sm:text-xl flex flex-wrap">
             <span className="text-slate-500">Shirke</span>
             <span className="text-slate-700">Estate</span>
           </h1>
@@ -37,7 +37,7 @@ function Header() {
               About
             </li>
           </Link>
-          <Link to="/profile">
+          <Link to="/sign-in">
             <li className=" text-slate-700 hover:underline"> Sign in</li>
           </Link>
         </ul>

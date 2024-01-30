@@ -18,14 +18,14 @@ mongoose
 app.listen(3000, () => {
   console.log("server running on 3000");
 });
+
 //Configs
 app.use(express.json());
-
 app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
 
-// Error Middleware
 
+// Error Middleware
 app.use((err, req, res, next) => {
   const statusCode = err.statusCode || 500;
   const message = err.message || "Internal Server Error";

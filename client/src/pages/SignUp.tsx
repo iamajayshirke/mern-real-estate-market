@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
-import { Terminal } from "lucide-react";
 
 function SignUp() {
   const navigate = useNavigate()
@@ -72,7 +71,7 @@ function SignUp() {
       {/* <Button>Sign Up</Button> */}
       <p className="mt-2">
         Already Have an Account?{" "}
-        <Link to={"/"} className="text-sky-900">
+        <Link to={"/sign-in"} className="text-sky-900">
           Sign In
         </Link>
       </p>
